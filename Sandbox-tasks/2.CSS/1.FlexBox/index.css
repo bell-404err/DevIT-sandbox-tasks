@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    height: 100%;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+header {
+    font-weight: bold;
+    text-transform: uppercase;
+    /*text-align: center;*/
+
+    border: 2px black solid;
+
+
+
+}
+
+nav ul {
+    border: 2px green solid;
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
