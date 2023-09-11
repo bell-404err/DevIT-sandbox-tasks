@@ -6,38 +6,53 @@
 
 body {
     display: flex;
-    justify-content: center;
-}
-
-.wrapper {
-    height: 100%;
-    width: 800px;
-    display: flex;
     flex-direction: column;
-
-    justify-content: center;
+    /*min-height: 100vh;*/
 }
 
 header {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 10px;
+
+    font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
-    /*text-align: center;*/
 
-    border: 2px black solid;
+    justify-content: center;
+    align-items: center;
 
-
-
+    border: 2px black solid; /*Для наглядности разделения блоков*/
 }
 
-nav ul {
-    border: 2px green solid;
-    text-align: center;
-    list-style-type: none;
+nav div {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    border: 2px black solid; /*Для наглядности разделения блоков*/
+
+    /*justify-content: space-between; На случай если нужно разместить несколько кнопок равномерно по меню*/
+    /*list-style-type: none; На случай если мы добавим меню, чтобы скрыть маркеры для списка*/
 }
 
 main {
     display: flex;
-    flex: 1;
+    flex: 1; /*Делает так, чтобы текущий блок занимал все свободное пространство от блока выше и до блока ниже
+    (в данном случае main займет все свободное пространство от header до footer)*/
+    justify-content: space-between;
+    /*align-items: center;*/
+    flex-direction: column;
+
+    border: 2px black solid;
+}
+
+.content {
+    /*fle*/
 }
