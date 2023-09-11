@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25%;
+
+    background-color: #000;
+}
+
+@keyframes moving {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes ch-color {
+    from {
+        background-color: red;
+    }
+
+    25% {
+        background-color: orange;
+    }
+
+    75% {
+        background-color: green;
+    }
+
+    to {
+        background-color: red;
+    }
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    animation-name: moving, ch-color;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
