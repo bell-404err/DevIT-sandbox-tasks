@@ -7,12 +7,14 @@
 body {
     display: flex;
     flex-direction: column;
-    /*min-height: 100vh;*/
+    padding: 15px;
+
+    height: 100vh;
 }
 
 header {
     display: flex;
-    height: 100px;
+    height: 10%;
     width: 100%;
     margin-bottom: 10px;
 
@@ -23,36 +25,76 @@ header {
     justify-content: center;
     align-items: center;
 
-    border: 2px black solid; /*Для наглядности разделения блоков*/
+    border: 2px black solid;
 }
 
 nav div {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-bottom: 10px;
 
     font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
 
-    border: 2px black solid; /*Для наглядности разделения блоков*/
+    border: 2px black solid;
 
-    /*justify-content: space-between; На случай если нужно разместить несколько кнопок равномерно по меню*/
-    /*list-style-type: none; На случай если мы добавим меню, чтобы скрыть маркеры для списка*/
 }
 
 main {
     display: flex;
-    flex: 1; /*Делает так, чтобы текущий блок занимал все свободное пространство от блока выше и до блока ниже
-    (в данном случае main займет все свободное пространство от header до footer)*/
     justify-content: space-between;
-    /*align-items: center;*/
-    flex-direction: column;
+    flex-direction: row;
+
+    width: 100%;
+    height: 80%;
+
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+}
+
+article {
+    display: flex;
+    width: 70%;
+    border: 2px black solid;
+    margin-right: 20px;
+
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    display: flex;
+    width: 30%;
+
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    justify-content: center;
+    align-items: center;
 
     border: 2px black solid;
 }
 
-.content {
-    /*fle*/
+footer {
+    display: flex;
+    width: 100%;
+
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 2px black solid;
 }
