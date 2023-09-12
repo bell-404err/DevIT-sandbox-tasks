@@ -25,7 +25,7 @@ const obj = {
 }
 
 // Создаю функцию, которая будет переводить данные из объекта в массив
-function arrayToObject(object) {
+function objectToArray(object) {
 
     // Создаю массив, в который будут записаны все результаты
     let resultArray = [];
@@ -53,5 +53,5 @@ function arrayToObject(object) {
     }
     return recursive(object, resultArray);
 }
-const array = arrayToObject(obj);
-console.log(array);
+const result = objectToArray(obj);
+console.log(result);
